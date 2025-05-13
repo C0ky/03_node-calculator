@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Node.js Calculator</h1>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" readonly>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="clear">C</button>
+                    <button class="operator">(</button>
+                    <button class="operator">)</button>
+                    <button class="operator">/</button>
+                </div>
+                <div class="row">
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">*</button>
+                </div>
+                <div class="row">
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator">+</button>
+                </div>
+                <div class="row">
+                    <button class="number">0</button>
+                    <button class="decimal">.</button>
+                    <button class="equals">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="server-info">
+            <p>Calculated using Node.js backend!</p>
+            <div id="calculation-history">
+                <h3>Calculation History</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
